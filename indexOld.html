@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Cars Hangman</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/images/hangmans-tree-soft-oil-painting-450w-480871801.jpg" , alt="Hangman">
+      </div>
+      <div class="col-md-6">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">HANGMAN!!!</h1>
+            <p class="lead">Press any key to get started with current word.</p>
+            <p>Hint: All words are models of cars.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <iframe id="music" width="560" height="315" style="display: none;" src="" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <a href="#" id="close" style="display:none;" onclick="stop();">Stop video and start a new game</a>
+        <br>
+        <a href="#" id="newSong" style="display:none;" onclick="chgSong();">Hear another song about cars.</a>
+
+      </div>
+      <div class="col-md-6">
+        <p id="word-text"></p>
+        <p id="wins-text">Wins:</p>
+        <p id="remain-text">Number of remaining guesses:</p>
+        <p id="letterList">Letters already guessed: </p>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script src="assets/javascript/game.js"></script>
+
+</html>
