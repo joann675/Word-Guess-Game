@@ -59,7 +59,7 @@
       var userGuess = event.key;
       userGuess = userGuess.toLowerCase();
 
-
+      // Skip it if it was already used or if it's not a letter
       if (lettersUsed.includes(userGuess) || event.keyCode < 65 || event.keyCode > 90)
         console.log("Letter already guessed or not a lower case alphabetic character");
       else {
@@ -126,6 +126,8 @@
         wordString = wordString + "_ ";
       }
       wordText.textContent = wordString;
+
+      // Reset letters used and guesses remaining - display the current number of wins
       lettersUsed = [];
       letters.textContent = "Letters already guessed: " + lettersUsed;
       winText.textContent = "Wins: " + wins;
@@ -136,7 +138,7 @@
     }
 
     function stop() {
-      // stopAllYouTubeVideos();
+      // stop all YouTube Videos;
       frame.style = "display:none";
       frame.src = ""
       close.style = "display:none";
@@ -146,12 +148,14 @@
     }
 
     function chgSong() {
+      // Randomly pick another song to play
       frame.src = playlist[Math.floor(Math.random() * playlist.length)].src + "?autoplay=1";
 
 
     }
 
     function loadJukeBox() {
+      // Create objects for videos and push them onto the playlist
       var track1 = {
         artist: "Gary Numan",
         song: "Cars",
