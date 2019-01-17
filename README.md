@@ -19,5 +19,9 @@ you will not be penalized.
 
 If you have a song about cars, you can add it to the playlist and our jukebox collection can continue to grow.
 
+### Links
+
+This site is published at https://joann675.github.io/Word-Guess-Game/
+
 
 
